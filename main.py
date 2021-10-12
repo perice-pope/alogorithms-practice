@@ -13,11 +13,11 @@ def insertionSort(arr):
 		# Move elements of arr[0..i-1], that are
 		# greater than key, to one position ahead
 		# of their current position
-		j = i-1
-		while j >=0 and key < arr[j] :
-				arr[j+1] = arr[j]
-				j -= 1
-		arr[j+1] = key
+		j = i-1 # j is index left of i  
+		while j >=0 and key < arr[j] : # while second num is greater than first 
+				arr[j+1] = arr[j] # scooch (technically overwrite) left to write
+				j -= 1 # resets j 
+		arr[j+1] = key # reset key 
 
 
 # Driver code to test above
